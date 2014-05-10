@@ -5,8 +5,8 @@
 	$topic = $_POST['topic'];
 	$message = $_POST['message'];
 	
-	$site_owners_email = 'rwholmes1@gmail.com'; // Replace this with your own email address
-	$site_owners_name = 'Robert Holmes'; // replace with your name
+	$site_owners_email = 'twentyapplication@gmail.com'; // Replace this with your own email address
+	$site_owners_name = 'Twenty App'; // replace with your name
 	
 	if (strlen($name) < 2) {
 		$error['name'] = "Please enter your name";	
@@ -34,11 +34,11 @@
 		// EDIT THIS!!
 		
 		$mail->Mailer = "smtp";
-		$mail->Host = "mail.yoursmtp.com";
-		$mail->Port = 25;
+		$mail->Host = "ssl://smtp.gmail.com";
+		$mail->Port = 465;
 		
 		$mail->SMTPAuth = false; // turn on SMTP authentication
-		$mail->Username = "you@youremail.com"; // SMTP username
+		$mail->Username = "twentyapplication@youremail.com"; // SMTP username
 		$mail->Password = "yourpassword"; // SMTP password
 
 		$mail->Send();
