@@ -7,8 +7,15 @@
   <meta name="description" content="Twenty is a new mobile app that connects professionals with shared interests.Sign up with your LinkedIn account to automatically generate a profile with your background and interests. Twenty will match you with other  professionals nearby for 20 minute in-person conversations."> 
   <meta name="keywords" content=",Mobile Apps,Startups,Hack Reactor,Networking,Tinder,Business Networking Apps"> 
   <link href="./app.css" rel="stylesheet" type="text/css">
-</head> 
-<body> 
+
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key: 75h8l2iluvrsm7
+  </script>
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/lodash/dist/lodash.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+<body>
     <div class="github-fork-ribbon-wrapper right ng-scope" style="pointer-events: none;">
       <div class="github-fork-ribbon">
         <a href="http://www.hackreactor.com" target="_blank" style="pointer-events: all;">Made at Hack Reactor</a>
@@ -101,8 +108,10 @@
                 <span class="LR-sign-up-label">Signup to get updates as we grow!</span>
                 <div class="LR-sign-up-container"><!--  .LR-extra-fields -->
                   <div class="LR-sign-up-container-inner LR-clearfix">
-                    <input type="email" class="LR-sign-up-input signup-email" placeholder="e-mail address">
-                    <input type="submit" name="submit" title="GO" value="GO" class="LR-sign-up-submit">
+                    <script type="IN/Login" data-onAuth="linkedinLogin" data-onLogout="linkedinLogout">
+                      <p>Welcome, <?js= firstName ?> <?js= lastName ?></p>
+                      <p>Thanks for registering with Twenty.</p>
+                    </script>
                   </div><!-- .sign-up-container-inner -->
                 </div><!-- .sign-up-container -->
               </div><!-- .sign-up -->     
@@ -112,4 +121,9 @@
         </div><!-- .box-inner -->
       </div><!-- .box-wrapper -->
     </div><!-- #content --> 
-  </div>  
+  </div>
+
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
