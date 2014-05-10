@@ -18,7 +18,7 @@
 	if ($_POST['submit']) {
     	if ($name != '' && $email != '') {
     		if (mail ("rwholmes1@gmail.com", $subject, $emailbody, $headers)) { 
-        		echo '<p>Thank you for your message!</p>'; 
+        		header('Location: ../index.html');
 		    }
 		    else { 
         		echo '<p>Something went wrong, go back and try again!</p>'; 
