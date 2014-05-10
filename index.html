@@ -13,6 +13,10 @@
 	<script type="text/javascript" src="javascripts/jquery.tools.js"></script>
   <script type="text/javascript" src="javascripts/lodash.min.js"></script>
 	<script type="text/javascript" src="javascripts/slickapp.js"></script>
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key: 75h8l2iluvrsm7
+  </script>
+  <script type="text/javascript" src="javascripts/linkedin.js"></script>
 </head>
 <body>
 	
@@ -268,7 +272,13 @@
 		</div> <!-- Start Release Notes Page -->
 
     <div id="sign_up" class="pane"> <!-- Start Sign Up Page -->
-      Hold tight, our sign up page coming soon!
+      <p>Please register with Twenty so we can begin to match you with other professionals.</p>
+      <br>
+      <script type="IN/Login" data-onAuth="linkedinLogin" data-onLogout="linkedinLogout">
+        <p>Welcome, <?js= firstName ?> <?js= lastName ?></p>
+        <br>
+        <p>Thanks for registering with Twenty.</p>
+      </script>
     </div> <!-- Start Sign Up Page -->
 		
 		<div id="contact" class="pane"> <!-- Start Contact Page -->
