@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>  
+<head>
 	<title>Twenty App for iPhone and Android</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
@@ -35,12 +35,12 @@
 		
 			<div id="app_description"> <!-- Start App Description -->
 				<div class="header">
-					<h1>Twenty</h1>
+					<h1>twenty</h1>
 					<div class="version">Version 1.0</div>
 					<div class="clear"></div>
 				</div>
 				<p>Twenty is a new mobile app that allows you to find and meet professionals in your area based on shared interests and experience.</p><br>
-        <p>Users sign into the app with ther LinkedIn accounts to generate a profile with their current role, interests, and past work experience.</p>
+        <p>Users sign into the app with their LinkedIn accounts to generate a profile with their current role, interests, and past work experience.</p>
 				<ul>
 					<li>Expand your professional network.</li>
 					<li>Have fun swiping left and right to approve/reject potential connections.</li>
@@ -48,7 +48,7 @@
 					<li>Find professionals that are relevant to you based on shared interests and experience.</li>
 				</ul>
 			
-				<div class="actions">
+<!-- 				<div class="actions">
 					<a href="#" class="app_store">Available on the iPhone</a>
 					<p>
 						<b>Requirements:</b>
@@ -56,7 +56,7 @@
 						Requires iOS 6.0 or later. WiFi, Edge, or 3G network connection sometimes required.
 					</p>`
 					<div class="clear"></div>
-				</div>
+				</div> -->
 			</div> <!-- End App Description -->
 			<div class="clear"></div>
 		</div>
@@ -82,33 +82,34 @@
 			
 			<div id="features"> <!-- Start Features -->
 				<div class="feature">
-					<div class="new"></div>
+          <!-- This is a banner that says 'new!' -->
+					<!-- <div class="new"></div> -->
 					<div class="content">
 						<div class="screenshot">
-							<img src="images/feature_1.jpg" alt="" />
-							<a href="images/feature_1.jpg" class="screenshots" rel="group">Enlarge</a>
+							<img src="images/screen_login.jpg" alt="" />
+							<!-- <a href="images/screen_login.jpg" class="screenshots" rel="group">Enlarge</a> -->
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit cras eget.</p>
+						<p>Easy login and profile generation with LinkedIn.</p>
 					</div>				
 					<div class="bottom"></div>
 				</div>
 				<div class="feature">
 					<div class="content">
 						<div class="screenshot">
-							<img src="images/feature_2.jpg" alt="" />
-							<a href="images/feature_2.jpg" class="screenshots" rel="group">Enlarge</a>
+							<img src="images/screen_user.jpg" alt="" />
+							<!-- <a href="images/screen_user.jpg" class="screenshots" rel="group">Enlarge</a> -->
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit cras eget.</p>
+						<p>View user profiles and choose to network with the most relevant professionals.</p>
 					</div>				
 					<div class="bottom"></div>
 				</div>
 				<div class="feature last">
 					<div class="content">
 						<div class="screenshot">
-							<img src="images/feature_3.jpg" alt="" />
-							<a href="images/feature_3.jpg" class="screenshots" rel="group">Enlarge</a>
+							<img src="images/screen_conversation.jpg" alt="" />
+							<!-- <a href="images/screen_conversation.jpg" class="screenshots" rel="group">Enlarge</a> -->
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit cras eget.</p>
+						<p>In-app messaging makes connecting for meetings easy.</p>
 					</div>				
 					<div class="bottom"></div>
 				</div>
@@ -123,11 +124,11 @@
 						<span>- Ryan S. <!-- <a href="">someguy.com</a> --></span>
 					</div>
 					<div class="review">
-						<p>II use Twenty when I travel to meet other professionals during long layovers at SFO.</p>
+						<p>I use Twenty when I travel to meet other professionals during long layovers at SFO.</p>
 						<span>- Jon T. <!-- <a href="">somegirl.com</a> --></span>
 					</div>
 					<div class="review">
-						<p>Twenty let's me grab that drink with other engineers to talk about new technologies and techniques.</p>
+						<p>Twenty lets me grab that drink with other engineers to talk about new technologies and techniques.</p>
 						<span>- Phillip A. <!-- <a href="">someguy.com</a> --></span>
 					</div>
 					<div class="review">
@@ -172,13 +173,18 @@
 		<div id="about" class="pane"> <!-- Start About Page -->
 			<div class="left">
 				<h2>The App</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<p>In order to make Twenty fun and easy to use, we employed a Tinder-like swipe interface. Users sign into the app with their LinkedIn accounts to generate a profile with their current role, interests, and past work experience. Once logged in, they are presented with other user profiles, and can swipe right to 'approve' or left to 'reject' potential connections. If two users approve each other, a connection is made and an in-app conversation is opened up.</p>
 
         <h2>Made at Hack Reactor</h2>
         <p>Twenty came out of a 3-week project that the team worked on at <a href="http://www.hackreactor.com/">Hack Reactor</a>, an intense software engineering bootcamp in San Francisco.</p>
 
         <h2>The Tech Stack</h2>
-        <p>We built the app on Cordova, a platform that allows wrapping of JS/CSS/HTML as a native phone app and exposes a good deal of the phone's functionality, such as geolocation, keyboard functionality, in-app browsers, and so on. We laid the Ionic Framework on top of that, which abstracts away a good amount of the complexity of building the various screen and menu states</p>
+
+        <span><strong>Frontend</strong> - Angular/Ionic</span><br>
+        <span><strong>Server</strong> - Node/Express</span><br>
+        <span><strong>Database</strong> - Neo4j</span><br><br>
+
+        <p>We built the app on Cordova, a platform that allows wrapping of JS/CSS/HTML as a native phone app and exposes a good deal of the phone's functionality, such as geolocation, keyboard functionality, in-app browsers, and so on. We laid the Ionic Framework on top of that, which abstracts away a good amount of the complexity of building the various screen and menu states.</p>
 				
 			</div>
 
@@ -242,11 +248,10 @@
 				</div>
 				<div class="right">
 					<ul>
-						<li>New: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-						<li>New: Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</li>
-						<li>Fixed: Duis aute irure dolor in reprehenderit in voluptate velit dolore eu pariatur.</li>
-						<li>Fixed: Sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-						<li>Fixed: Proin quis tortor orci. Etiam at risus et justo dignissim congue.</li>
+						<li>Initial deployment!</li>
+            <li>New: App is up and running with sign in and swipe functionality.</li>
+            <li>New: Messaging between users</li>
+            <li>New: Pop-up alerts users of a connection</li>
 					</ul>
 				</div>
 				<div class="clear"></div>
@@ -330,12 +335,24 @@
 		</div>
 		
 		<div class="bottom">
-			<a href=""><img src="images/app_store_small.gif" alt="" /></a>
+			<!-- <a href=""><img src="images/app_store_small.gif" alt="" /></a> -->
 			<p>Copyright &copy; 2014 20app.co</p>
 			<div class="clear"></div>
 		</div>
 		
 	</div> <!-- End Footer -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('body').append(
+      '<a href="http://hackreactor.com"> \
+      <img style="position: fixed; top: 0; right: 0; border: 0;" \
+      src="http://i.imgur.com/x86kKmF.png" \
+      alt="Built at Hack Reactor"> \
+      </a>');
+    });
+  </script>
 	
 </body>
 </html>
+
