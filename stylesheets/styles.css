@@ -76,8 +76,8 @@ div#top_content {
 		div#top_content div#app_description div.actions { margin-top: 50px; }
 			div#top_content div#app_description div.actions a.app_store {
 				width: 251px;
-				height: 75px;
-				background: url('../images/app_store.gif') no-repeat top;
+				height: 85px;
+				background: url('../images/new-app-button-soon.png') no-repeat top;
 				display: block;
 				text-indent: -999999px;
 				float: left;
