@@ -82,6 +82,10 @@ div#top_content {
 				text-indent: -999999px;
 				float: left;
 			}
+			div#top_content div#app_description div.actions a.beta_access {
+				margin-left: 16px;
+				background: url('../images/beta-access-button.png') no-repeat top;
+			}
 			div#top_content div#app_description div.actions p {
 				font-size: 12px;
 				width: 260px;
@@ -454,7 +458,13 @@ h1 {
 	text-indent: -999999px;
 	font-size: 60px;
 	margin-bottom: 15px;
-}		
+}
+h1.beta {
+	font-size: 40px;
+	background: none;
+	text-indent: 0px;
+	margin-bottom: 0px;
+}			
 h2 {
 	color: #222;
 	font-size: 20px;
