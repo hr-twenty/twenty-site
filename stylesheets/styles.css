@@ -483,7 +483,7 @@ span.red { color: #e20a10; }
 	font-weight: bold;
 }
 .email-list form {
-	padding-left: 0px;
+	padding-left: 0px !important;
 }
 /*--------------------------------------------
 Utility
