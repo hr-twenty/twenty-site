@@ -403,7 +403,12 @@ div#contact_form {}
 			color: #50aeae;
 			text-decoration: none;
 		}
-			div#contact_form div.right a.email:hover { color: #333; }		
+		a.mailing {
+			display: block;
+			color: #50aeae;
+			text-decoration: none;
+		}
+		div#contact_form div.right a.email:hover { color: #333; }		
 /*--------------------------------------------
 Footer
 ---------------------------------------------*/
