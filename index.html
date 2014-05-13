@@ -275,9 +275,14 @@
       <p>Please register with Twenty so we can begin to match you with other professionals.</p>
       <br>
       <script type="IN/Login" data-onAuth="linkedinLogin" data-onLogout="linkedinLogout">
-        <p>Welcome, <?js= firstName ?> <?js= lastName ?></p>
+        <p>Thanks for registering, <?js= firstName ?>, now try it out.</p>
         <br>
-        <p>Thanks for registering with Twenty.</p>
+        <iframe id="twenty-app"
+          src="http://localhost:3000/"
+          height="480px"
+          width="340px"
+          frameborder="0">
+        </iframe>
       </script>
     </div> <!-- Start Sign Up Page -->
 		
