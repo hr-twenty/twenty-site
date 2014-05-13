@@ -18,7 +18,7 @@
 	if ($_POST['submit']) {
     	if ($name != '' && $email != '') {
     		if (mail ("rwholmes1@gmail.com", $subject, $emailbody, $headers)) { 
-        		// header('Location: index.html');
+        		header('Location: beta-signup.html');
 		    }
 		    else { 
         		echo '<p>Something went wrong, go back and try again!</p>'; 
